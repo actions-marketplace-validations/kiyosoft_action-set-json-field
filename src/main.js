@@ -27,6 +27,7 @@ async function main() {
                         value = parseFloat(value)
                     }
                 }
+                console.log(`The type is ${typeof value}`)
                 obj[part] = value;
             } else {
                 obj[part] = obj[part] || {}
@@ -35,6 +36,7 @@ async function main() {
         });
 
         data = JSON.stringify(root, null, 2);
+        console.log(data);
         fs.writeFileSync(file, data, 'utf8');
 
     } catch (error) {
