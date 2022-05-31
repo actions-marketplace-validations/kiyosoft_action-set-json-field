@@ -18,6 +18,7 @@ Add this step in your workflow file
 - `file`: File name/path to edit. e.g `package.json`
 - `field`: Field to edit. Can be nested fields. e.g `version` or `metadata.scripts.build`
 - `value`: Value to set. e.g. `v1.2.3`
+- `type`: The datatype of the value. e.g. `int`
 - `parse_json`: Optional. If set to **any non-empty** value - will parse the data in `value` field to JSON
 
 

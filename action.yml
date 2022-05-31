@@ -1,6 +1,6 @@
-name: 'Set JSON Field'
-description: 'This GitHub Action helps edit a JSON file and set a field value'
-author: 'Jossef Harush'
+name: 'Set JSON Field with DataType'
+description: 'This GitHub Action helps edit a JSON file and set a field value with data type'
+author: 'Kidus Solomon'
 inputs:
   file:
     required: true
@@ -11,6 +11,9 @@ inputs:
   value:
     required: true
     description: "value to set. string. e.g. 'v1.2.3'"
+  type:
+    required: false
+    description: "The datatype of the value. e.g. 'int'"
   parse_json:
     required: false
     default: ""
@@ -21,5 +24,5 @@ runs:
 branding:
   icon: 'edit'
   color: 'yellow'
-  
-  
+
+
